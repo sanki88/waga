@@ -9,26 +9,26 @@
 </head>
   <body>
     <div class="container">
-        <div class="deasel">
+        <div class="deasel bg-secondary">
             <h2>Diesel</h2>
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Waga Autobusu</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Waga Autobusu (kg)</span>
                         <input id="waga" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                   </div>
                   <div class="col">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Pojemność zbiornika</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Pojemność zbiornika (w litrach)</span>
                         <input id="pojemnosc" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         
                       </div>
                   </div>
                   <div class="col">
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">ilość zatankowanego paliwa</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">ilość zatankowanego paliwa (%)</span>
                         <input id="paliwo" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                   </div>
@@ -36,9 +36,58 @@
             </div>
             <button id="oblicz" type="button" class="btn btn-primary">oblicz</button>
             <div class="result"></div>
-
-              
         </div>
+        <hr>
+        <div class="deasel bg-success">
+          <h2>CNG</h2>
+          <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-default">Waga Autobusu (kg)</span>
+                      <input id="wagaCNG" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">pojemność zbiornika</span>
+                    <select id="pojemnoscCNG" class="form-select" aria-label="Default select example">
+                      <option selected>4x315</option>
+                    </select>
+                      
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="input-group mb-3">
+                      <span class="input-group-text" id="inputGroup-sizing-default">ilość zatankowanego paliwa (%)</span>
+                      <input id="paliwoCNG" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+              </div>
+          </div>
+          <button id="obliczCNG" type="button" class="btn btn-primary">oblicz</button>
+          <div class="resultCNG"></div>
+
+            
+      </div>  
+      <hr>
+      <div class="deasel bg-info">
+        <h2>Elektryk</h2>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Waga Autobusu (kg)</span>
+                    <input id="wagaElektryk" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+              </div>
+            </div>
+        </div>
+        <button id="obliczElektryk" type="button" class="btn btn-primary">oblicz</button>
+        <div class="resultElektryk"></div>
+
+          
+    </div>  
         
     </div>
     
